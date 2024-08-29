@@ -1,0 +1,38 @@
+{
+  "name": "pomotube",
+  "version": "1.0.0",
+  "description": "pomodoro timer with youtube integration",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Saksham Gupta",
+  "license": "ISC",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sakzgupzzz/pomoTube.git"
+  },
+  "keywords": [
+    "A",
+    "web",
+    "app",
+    "that",
+    "curates",
+    "YouTube",
+    "videos",
+    "based",
+    "on",
+    "user-specified",
+    "lengths."
+  ],
+  "bugs": {
+    "url": "https://github.com/sakzgupzzz/pomoTube/issues"
+  },
+  "homepage": "https://github.com/sakzgupzzz/pomoTube#readme",
+  "dependencies": {
+    "express": "^4.19.2",
+    "nodemon": "^3.1.4",
+    "webpack": "^5.94.0",
+    "webpack-cli": "^5.1.4"
+  }
+}

@@ -1,0 +1,28 @@
+{
+  "name": "pomoTube",
+  "version": "1.0.0",
+  "description": "A web app that curates YouTube videos based on user-specified lengths.",
+  "main": "server.js", // Change this if you have a Node.js backend file
+  "scripts": {
+    "start": "node backend/app.js", // Command to start the backend server (change path if needed)
+    "dev": "nodemon backend/app.js", // Command for development (auto-reload on changes)
+    "build": "webpack --mode production", // Command to build front-end files if using Webpack
+    "test": "echo \"Error: no test specified\" && exit 1" // Placeholder for tests
+  },
+  "keywords": [
+    "YouTube",
+    "curator",
+    "video",
+    "webapp"
+  ],
+  "author": "Saksham Gupta",
+  "license": "MIT",
+  "dependencies": {
+    "express": "^4.18.2" // Example backend framework
+  },
+  "devDependencies": {
+    "nodemon": "^3.0.1", // Tool to automatically restart server on changes
+    "webpack": "^5.88.1", // Module bundler (optional)
+    "webpack-cli": "^5.1.4" // Command-line interface for Webpack (optional)
+  }
+}
