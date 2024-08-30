@@ -2,16 +2,23 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>PomoTube</title>
+    <title>pomoTube - YouTube Video Curator</title>
+    <link rel="stylesheet" href="static/style.css">
+    <script src="static/script.js"></script>
 </head>
 <body>
-    <input type="number" id="videoLength" placeholder="Enter video length in minutes">
-    <button id="fetchButton">Fetch Videos</button>
-    <div id="videoResults"></div>
-
-    <!-- Include your script -->
-    <script src="static/script.js"></script>
+    <div class="container">
+        <h1>pomoTube</h1>
+        <p>Curate YouTube videos based on your desired length and topic!</p>
+        <div class="input-group">
+            <label for="videoLength">Enter Desired Video Length (minutes):</label>
+            <input type="number" id="videoLength" min="1" placeholder="Enter length in minutes">
+            <label for="topic">Enter Topic or Hashtag:</label>
+            <input type="text" id="topic" placeholder="Enter topic (e.g., science, history)">
+            <button onclick="fetchCuratedVideos()">Curate Videos</button>
+        </div>
+        <div id="videoResults" class="video-results"></div>
+    </div>
 </body>
 </html>
